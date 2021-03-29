@@ -1,7 +1,7 @@
 # Markdown Cheat Sheet
 
 ## Table of contents
-  
+
 * [Basic Syntax](#basic-syntax)
   + [Headings](#headings)
   + [Paragraphs](#paragraphs)
@@ -19,6 +19,8 @@
   + [Table](#table)
   + [Fenced Code Block](#fenced-code-block)
   + [Footnote](#footnote)
+  + [Superscript](#superscript)
+  + [Subscript](#subscript)
   + [Heading ID](#heading-id)
   + [Definition List](#definition-list)
   + [Strikethrough](#strikethrough)
@@ -400,14 +402,51 @@ Not all Markdown applications support extended syntax elements.
 ### Footnote
 
 ```md
-Here's a sentence with a footnote. [^1]
+Here's a sentence with a footnote 1. [^1]
+Here's a sentence with a footnote 2. [^2]
 
-[^1]: This is the footnote.
+[^1]: This is the footnote 1.
+[^2]: This is the footnote 2.
 ```
 
-Here's a sentence with a footnote. [^1]
+```html
+Here's a sentence with a footnote 1. <sup id="sup1">[[1]](#footnote1)</sup>
+Here's a sentence with a footnote 2. <sup id="sup2">[[2]](#footnote2)</sup>
 
-[^1]: This is the footnote.
+<!-- footer -->
+
+***
+
+<span id="footnote1">1</span>: This is the footnote 1. [↩](#sup1)
+<span id="footnote2">2</span>: This is the footnote 2. [↩](#sup2)
+```
+
+Here's a sentence with a footnote 1. <sup id="sup1">[[1]](#footnote1)</sup>
+Here's a sentence with a footnote 2. <sup id="sup2">[[2]](#footnote2)</sup>
+
+### Superscript
+
+```md
+(x + 1)^2^ = x^2^ + 2x + 1
+```
+
+```html
+(x + 1)<sup>2</sup> = x<sup>2</sup> + 2x + 1
+```
+
+(x + 1)<sup>2</sup> = x<sup>2</sup> + 2x + 1
+
+### Subscript
+
+```md
+y = log~2~(x)
+```
+
+```html
+y = log<sub>2</sub>(x)
+```
+
+y = log<sub>2</sub>(x)
 
 ### Heading ID
 
@@ -424,12 +463,31 @@ Here's a sentence with a footnote. [^1]
 ### Definition List
 
 ```md
-term
-: definition
+First Term
+: This is the definition of the first term.
+
+Second Term
+: This is one definition of the second term.
+: This is another definition of the second term.
 ```
 
-term
-: definition
+```html
+<dl>
+  <dt>First Term</dt>
+  <dd>This is the definition of the first term.</dd>
+  <dt>Second Term</dt>
+  <dd>This is one definition of the second term. </dd>
+  <dd>This is another definition of the second term.</dd>
+</dl>
+```
+
+<dl>
+  <dt>First Term</dt>
+  <dd>This is the definition of the first term.</dd>
+  <dt>Second Term</dt>
+  <dd>This is one definition of the second term. </dd>
+  <dd>This is another definition of the second term.</dd>
+</dl>
 
 ### Strikethrough
 
@@ -466,3 +524,8 @@ term
 ## References
 
 [Markdown Guide](https://www.markdownguide.org/)
+
+***
+
+<span id="footnote1">1</span>: This is the footnote 1. [↩](#sup1)
+<span id="footnote2">2</span>: This is the footnote 2. [↩](#sup2)
