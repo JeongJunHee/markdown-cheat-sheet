@@ -2,51 +2,168 @@
 
 ## Basic Syntax
 
-### Heading
+### Headings
 
 ```md
-# H1
+# Heading level 1
 
-## H2
+Heading level 1
+===============
 
-### H3
+## Heading level 2
 
-#### H4
+Heading level 2
+---------------
 
-##### H5
+### Heading level 3
 
-###### H6
+#### Heading level 4
+
+##### Heading level 5
+
+###### Heading level 6
 ```
 
-# H1
+```html
+<h1>Heading level 1</h1>
 
-## H2
+<h1>Heading level 1</h1>
 
-### H3
+<h2>Heading level 2</h2>
 
-#### H4
+<h2>Heading level 2</h2>
 
-##### H5
+<h3>Heading level 3</h3>
 
-###### H6
+<h4>Heading level 4</h4>
 
-### Bold
+<h5>Heading level 5</h5>
+
+<h6>Heading level 6</h6>
+```
+
+# Heading level 1
+
+Heading level 1
+===============
+
+## Heading level 2
+
+Heading level 2
+---------------
+
+### Heading level 3
+
+#### Heading level 4
+
+##### Heading level 5
+
+###### Heading level 6
+
+### Paragraphs
+
+```md
+I really like using Markdown.
+
+I think I'll use it to format all of my documents from now on.
+```
+
+```html
+<p>I really like using Markdown.</p>
+
+<p>I think I'll use it to format all of my documents from now on.</p>
+```
+
+I really like using Markdown.
+
+I think I'll use it to format all of my documents from now on.
+
+### Line Breaks
+
+To create a line break (`<br>`), end a line with two or more spaces, and then type return.
+
+```md
+This is the first line.  
+And this is the second line.
+```
+
+```html
+<p>This is the first line.<br>
+And this is the second line.</p>
+```
+
+This is the first line.  
+And this is the second line.
+
+### Emphasis
+
+#### Bold
 
 ```md
 **bold text**
+
+__bold text__
+```
+
+```html
+<strong>bold text</strong>
+
+<strong>bold text</strong>
 ```
 
 **bold text**
 
-### Italic
+__bold text__
+
+#### Italic
 
 ```md
+*italicozed text*
+
 _italicozed text_
 ```
 
+```html
+*italicozed text*
+
+_italicozed text_
+```
+
+*italicozed text*
+
 _italicozed text_
 
-### Blockquote
+#### Bold and Italic
+
+```md
+This text is ***really important***.
+
+This text is ___really important___.
+
+This text is __*really important*__.
+
+This text is **_really important_**.
+```
+
+```html
+This text is <strong><em>really important</em></strong>.
+
+This text is <strong><em>really important</em></strong>.
+
+This text is <strong><em>really important</em></strong>.
+
+This text is <strong><em>really important</em></strong>.
+```
+
+This text is ***really important***.
+
+This text is ___really important___.
+
+This text is __*really important*__.
+
+This text is **_really important_**.
+
+### Blockquotes
 
 ```md
 > blockquote
@@ -54,7 +171,51 @@ _italicozed text_
 
 > blockquote
 
-### Ordered List
+#### Blockquotes with Multiple Paragraphs
+
+```md
+> Blockquotes with Multiple Paragraphs
+>
+> Blockquotes with Multiple Paragraphs
+```
+
+> Blockquotes with Multiple Paragraphs
+>
+> Blockquotes with Multiple Paragraphs
+
+#### Nested Blockquotes
+
+```md
+> Nested Blockquotes
+>
+>> Nested Blockquotes
+```
+
+> Nested Blockquotes
+>
+>> Nested Blockquotes
+
+#### Blockquotes with Other Elements
+
+```md
+> #### The quarterly results look great!
+>
+> - Revenue was off the chart.
+> - Profits were higher than ever.
+>
+>  *Everything* is going according to **plan**.
+```
+
+> #### The quarterly results look great!
+>
+> - Revenue was off the chart.
+> - Profits were higher than ever.
+>
+>  *Everything* is going according to **plan**.
+
+### Lists
+
+#### Ordered List
 
 ```md
 1. First Item
@@ -62,16 +223,32 @@ _italicozed text_
 3. Third Item
 ```
 
+```html
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
+```
+
 1. First Item
 2. Second Item
 3. Third Item
 
-### Unordered List
+#### Unordered List
 
 ```md
 - First Item
 - Second Item
 - Third Item
+```
+
+```html
+<ul>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ul>
 ```
 
 - First Item
@@ -86,21 +263,45 @@ _italicozed text_
 
 `code`
 
+### Code Blocks
+
+indent every line of the block by at least four spaces or one tab.
+
+```md
+    <html>
+      <head>
+      </head>
+    </html>
+```
+
+    <html>
+      <head>
+      </head>
+    </html>
+
 ### Horizontal Rule
 
 ```md
----
-```
+***
 
 ---
+
+_________________
+```
+
+***
+
+---
+
+_________________
 
 ### Link
 
 ```md
-[title](https://www.example.com)
+[link](https://www.example.com)
 ```
 
-[title](https://www.example.com)
+[link](https://www.example.com)
 
 ### Image
 
@@ -109,6 +310,14 @@ _italicozed text_
 ```
 
 <img width="30%" src="image.png" alt="alt text"></img>
+
+### Escaping Characters
+
+```md
+\* Without the backslash, this would be a bullet in an unordered list.
+```
+
+\* Without the backslash, this would be a bullet in an unordered list.
 
 ## Extended Syntax
 
