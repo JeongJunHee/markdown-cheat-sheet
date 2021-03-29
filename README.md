@@ -321,6 +321,8 @@ _________________
 
 ## Extended Syntax
 
+Not all Markdown applications support extended syntax elements.
+
 ### Table
 
 ```md
@@ -335,15 +337,31 @@ _________________
 | Header    | Title       |
 | Paragraph | Text        |
 
-### Fenced Code Block
+#### Alignment
 
 ```md
+| Syntax    | Description |   Test Text |
+| :-------- | :---------: | ----------: |
+| Header    |    Title    | Here's this |
+| Paragraph |    Text     |    And more |
+```
+
+| Syntax    | Description |   Test Text |
+| :-------- | :---------: | ----------: |
+| Header    |    Title    | Here's this |
+| Paragraph |    Text     |    And more |
+
+### Fenced Code Block
+
+<pre>
+```json
 {
   "firstName": "John",
   "lastName": "Smith",
   "age": 25
 }
 ```
+</pre>
 
 ```json
 {
@@ -400,3 +418,19 @@ term
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
+
+### Emoji
+
+```md
+:smile:
+:laughing:
+:stuck_out_tongue_closed_eyes:
+```
+
+:smile:
+:laughing:
+:stuck_out_tongue_closed_eyes:
+
+## References
+
+[Markdown Guide](https://www.markdownguide.org/)
