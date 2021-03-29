@@ -421,7 +421,7 @@ Here's a sentence with a footnote 2. <sup id="sup2">[[2]](#footnote2)</sup>
 <span id="footnote2">2</span>: This is the footnote 2. [↩](#sup2)
 ```
 
-Here's a sentence with a footnote 1. <sup id="sup1">[[1]](#footnote1)</sup>
+Here's a sentence with a footnote 1. <sup id="sup1">[[1]](#footnote1)</sup>  
 Here's a sentence with a footnote 2. <sup id="sup2">[[2]](#footnote2)</sup>
 
 ### Superscript
@@ -527,5 +527,5 @@ Second Term
 
 ***
 
-<span id="footnote1">1</span>: This is the footnote 1. [↩](#sup1)
-<span id="footnote2">2</span>: This is the footnote 2. [↩](#sup2)
+<span id="footnote1">1</span>: This is the footnote 1. [&#8617;](#sup1)  
+<span id="footnote2">2</span>: This is the footnote 2. [&#8617;](#sup2)
