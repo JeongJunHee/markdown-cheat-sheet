@@ -1,5 +1,31 @@
 # Markdown Cheat Sheet
 
+## Table of contents
+  
+* [Basic Syntax](#basic-syntax)
+  + [Headings](#headings)
+  + [Paragraphs](#paragraphs)
+  + [Line Breaks](#line-breaks)
+  + [Emphasis](#emphasis)
+  + [Blockquotes](#blockquotes)
+  + [Lists](#lists)
+  + [Code](#code)
+  + [Code Blocks](#code-blocks)
+  + [Horizontal Rule](#horizontal-rule)
+  + [Link](#link)
+  + [Image](#image)
+  + [Escaping Characters](#escaping-characters)
+* [Extended Syntax](#extended-syntax)
+  + [Table](#table)
+  + [Fenced Code Block](#fenced-code-block)
+  + [Footnote](#footnote)
+  + [Heading ID](#heading-id)
+  + [Definition List](#definition-list)
+  + [Strikethrough](#strikethrough)
+  + [Task List](#task-list)
+  + [Emoji](#emoji)
+* [References](#references)
+
 ## Basic Syntax
 
 ### Headings
